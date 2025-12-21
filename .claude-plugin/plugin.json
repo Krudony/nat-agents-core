@@ -1,0 +1,12 @@
+{
+  "name": "nat-agents-core",
+  "version": "1.0.0",
+  "description": "Reusable workflow agents: executor, coder, context-finder, planner. GitHub-optional.",
+  "author": {
+    "name": "Nat",
+    "url": "https://github.com/laris-co"
+  },
+  "repository": "https://github.com/laris-co/claude-plugins",
+  "license": "MIT",
+  "keywords": ["agents", "workflow", "executor", "coder", "productivity"]
+}

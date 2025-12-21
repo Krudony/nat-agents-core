@@ -1,0 +1,17 @@
+{
+  "name": "nat-agents-core",
+  "version": "1.0.0",
+  "owner": {
+    "name": "Nat"
+  },
+  "metadata": {
+    "description": "Reusable workflow agents: executor, coder, context-finder, planner. GitHub-optional."
+  },
+  "plugins": [
+    {
+      "name": "nat-agents-core",
+      "source": "./",
+      "description": "Reusable workflow agents for any project"
+    }
+  ]
+}
