@@ -17,6 +17,9 @@ Install Oracle commands and agents in your project.
 - `/recap` - Fresh start context summary
 - `/rrr` - Session retrospective
 - `/snapshot` - Quick knowledge capture
+- `/forward` - Forward context to new session
+- `/wip` - Show work in progress
+- `/standup` - Daily standup
 
 **Agents**:
 - `context-finder` - Fast search (haiku)
@@ -64,6 +67,7 @@ Files copied:
 - `recap.md` → `.claude/commands/recap.md`
 - `rrr.md` → `.claude/commands/rrr.md`
 - `snapshot.md` → `.claude/commands/snapshot.md`
+- `forward.md` → `.claude/commands/forward.md`
 
 ### Step 4: Copy agents
 
@@ -86,7 +90,8 @@ Installed:
 │   ├── trace.md
 │   ├── recap.md
 │   ├── rrr.md
-│   └── snapshot.md
+│   ├── snapshot.md
+│   └── forward.md
 └── .claude/agents/
     ├── context-finder.md
     ├── executor.md
@@ -110,7 +115,8 @@ Plugin cache has version folders:
         │   ├── trace.md
         │   ├── recap.md
         │   ├── rrr.md
-        │   └── snapshot.md
+        │   ├── snapshot.md
+        │   └── forward.md
         └── agents/
             ├── context-finder.md
             ├── executor.md
