@@ -196,8 +196,9 @@ Cycle continues...
 |-------|--------|---------|
 | oracle | ✅ Done | Consult for decisions |
 | oracle-incubate | ✅ Done | Track knowledge maturation |
-| oracle-teach | 🔲 Planned | Generate learning materials |
-| oracle-path | 🔲 Planned | Create learning paths |
+| oracle-teach | ✅ Done | Generate learning materials |
+| oracle-path | ✅ Done | Create learning paths |
+| oracle-mentor | ✅ Done | Guide newcomers with patience |
 
 ## Quick Reference
 
