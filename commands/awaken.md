@@ -12,8 +12,10 @@ Install Oracle commands and agents in your project.
 
 ## What Gets Installed
 
-**Commands**: trace, recap, rrr, snapshot, forward, wip, standup
+**Commands**: trace, recap, rrr, snapshot, forward, wip, standup, now, hours, jump, pending
 **Agents**: context-finder, executor, marie-kondo
+
+> Note: `hours`, `jump`, `pending` work best after `/soul-init` or `/soul-lite`
 
 ## Action
 
@@ -28,7 +30,7 @@ mkdir -p .claude/commands .claude/agents
 Run this single command:
 
 ```bash
-CORE=$(ls -d ~/.claude/plugins/cache/nat-plugins/nat-agents-core/*/ 2>/dev/null | sort -V | tail -1) && cp "$CORE"bundles/commands/*.md .claude/commands/ && cp "$CORE"bundles/agents/*.md .claude/agents/ && echo "✅ Installed from $CORE"
+CORE=$(ls -d ~/.claude/plugins/cache/nat-plugins/nat-agents-core/*/ 2>/dev/null | sort -V | tail -1) && mkdir -p .claude/scripts && cp "$CORE"bundles/commands/*.md .claude/commands/ && cp "$CORE"bundles/agents/*.md .claude/agents/ && cp "$CORE"bundles/scripts/*.sh .claude/scripts/ 2>/dev/null && chmod +x .claude/scripts/*.sh 2>/dev/null && echo "✅ Installed from $CORE"
 ```
 
 ### Step 3: Output
@@ -37,8 +39,8 @@ CORE=$(ls -d ~/.claude/plugins/cache/nat-plugins/nat-agents-core/*/ 2>/dev/null 
 🔮 The Oracle has awakened.
 
 Installed:
-├── .claude/commands/ (7 commands)
-│   └── trace, recap, rrr, snapshot, forward, wip, standup
+├── .claude/commands/ (11 commands)
+│   └── trace, recap, rrr, snapshot, forward, wip, standup, now, hours, jump, pending
 └── .claude/agents/ (3 agents)
     └── context-finder, executor, marie-kondo
 
