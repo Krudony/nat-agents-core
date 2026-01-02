@@ -5,11 +5,25 @@ description: Consult Oracle knowledge base for decisions, patterns, and wisdom. 
 
 # Oracle Skill
 
-> "The Oracle Keeps the Human Human"
+> "The Oracle Keeps the Human Human" + "สร้างคน" (Building People)
 
 ## Core Philosophy
 
 Oracle holds patterns, learnings, decisions from all past sessions. **Consult before acting** — don't reinvent what we've already learned.
+
+**สร้างคน Vision**: Knowledge incubates, matures, and transfers to build people.
+
+## Knowledge Maturity Levels
+
+| Level | Icon | Name | Description | Teachable? |
+|-------|------|------|-------------|------------|
+| 1 | 🥒 | **Observation** | Raw note, untested | No |
+| 2 | 🌱 | **Learning** | Tested once, worked | Maybe |
+| 3 | 🌿 | **Pattern** | Repeated 3+ times | Yes |
+| 4 | 🌳 | **Principle** | Universal truth | Definitely |
+| 5 | 🔮 | **Wisdom** | Changes behavior | Core teaching |
+
+**Progression**: Observations → Learnings → Patterns → Principles → Wisdom
 
 ## Proactive Triggers
 
@@ -89,6 +103,19 @@ oracle_learn({
 
 **Use for:** Discovered something new, end of session insights
 
+**Enhanced with maturity tracking:**
+```javascript
+oracle_learn({
+  pattern: "Validate webhooks before processing",
+  concepts: ["security", "webhooks"],
+  // Maturity metadata (for สร้างคน)
+  stage: "pattern",       // observation | learning | pattern | principle | wisdom
+  confidence: "high",     // low | medium | high
+  times_validated: 5,     // how many times this worked
+  teachable: true         // ready to teach others?
+})
+```
+
 ## Usage Patterns
 
 | User Says | Tool | Query |
@@ -141,6 +168,36 @@ oracle_learn({
 2. **Oracle advises, doesn't command** — Human decides
 3. **Capture insights** — What we learn today helps tomorrow
 4. **Nothing is deleted** — Oracle preserves history
+5. **สร้างคน** — Knowledge grows, matures, transfers to build people
+
+## สร้างคน (Building People) Flow
+
+```
+Person observes something
+        ↓
+Captures in Oracle (oracle_learn, stage: observation)
+        ↓
+Tests and validates (stage: learning → pattern)
+        ↓
+Extracts universal truth (stage: principle)
+        ↓
+Integrates into behavior (stage: wisdom)
+        ↓
+Teaches others → สร้างคน
+        ↓
+New person learns, observes new things
+        ↓
+Cycle continues...
+```
+
+## Future: Oracle Ecosystem (Issue #2)
+
+| Skill | Status | Purpose |
+|-------|--------|---------|
+| oracle | ✅ Done | Consult for decisions |
+| oracle-incubate | 🔲 Planned | Track knowledge maturation |
+| oracle-teach | 🔲 Planned | Generate learning materials |
+| oracle-path | 🔲 Planned | Create learning paths |
 
 ## Quick Reference
 
